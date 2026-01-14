@@ -1,0 +1,35 @@
+main:
+  - title: "빠른 시작"
+    url: /docs/intro/
+  - title: "개요"
+    url: /overview/
+  - title: "문서"
+    url: /docs/
+  - title: "샘플 글"
+    url: /news/
+  - title: "로드맵"
+    url: /roadmap/
+  - title: "성과"
+    url: /results/
+  - title: "문의"
+    url: /contact/
+
+docs:
+  - title: "시작하기"
+    children:
+      - title: "소개"
+        url: /docs/intro/
+      - title: "설치"
+        url: /docs/install/
+      - title: "빠른 실행"
+        url: /docs/quickstart/
+  - title: "아키텍처"
+    children:
+      - title: "전체 구조"
+        url: /docs/architecture/
+      - title: "배포"
+        url: /docs/deployment/
+  - title: "벤치마크"
+    children:
+      - title: "실험 재현"
+        url: /docs/repro/
