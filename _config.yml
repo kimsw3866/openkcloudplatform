@@ -1,0 +1,35 @@
+title: "AI 반도체,클라우드 프로젝트"
+description: "AI 반도체,클라우드 프로젝트 공식 사이트"
+
+url: "https://kimsw3866.github.io"
+baseurl: "/openkcloudplatform"
+
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+
+search: true
+search_full_content: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      breadcrumbs: true
+      toc: true
+      toc_sticky: true
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+header_pages:
+  - pages/overview.md
+  - pages/roadmap.md
+  - pages/results.md
+  - pages/contact.md
