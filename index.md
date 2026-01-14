@@ -1,7 +1,7 @@
 ---
 layout: splash
-title: "AI 반도체,클라우드 플랫폼"
-excerpt: "엣지부터 클라우드까지 연결하는 AI 컴퓨팅 플랫폼"
+title: "openKcloud Platform"
+excerpt: "An Open AI Semiconductor-based Cloud Service Platform for Hyperscale AI Services."
 
 header:
   overlay_image: /assets/images/hero.jpg
