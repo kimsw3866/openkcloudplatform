@@ -7,19 +7,10 @@ header:
   overlay_image: /assets/images/hero.png
   overlay_filter: 0.45
 
-  # ✅ Install 버튼
   actions:
     - label: "⬇ Install now"
       url: "https://github.com/kimsw3866/openkcloudplatform"
       class: "btn--primary btn--large"
-
-  # ✅ Install 버튼 바로 위에 나오는 영역
-  caption: >
-    <a class="hero-release-link"
-       href="https://github.com/kimsw3866/openkcloudplatform/releases">
-       Latest release v4.27.3
-    </a>
-
 
 feature_row:
   - image_path: /assets/images/feature-1.jpg
@@ -47,5 +38,12 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
+<!-- 🔹 hero 영역 안, Install now 버튼 바로 위에 표시됨 -->
+<p class="hero-release">
+  <a class="hero-release-link"
+     href="https://github.com/kimsw3866/openkcloudplatform/releases">
+    Latest release v4.27.3
+  </a>
+</p>
 
 {% include feature_row %}

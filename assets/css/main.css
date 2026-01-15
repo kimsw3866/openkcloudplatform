@@ -1,32 +1,32 @@
 ---
 ---
 
+/* Minimal Mistakes 기본 스타일 로드 */
 @import "minimal-mistakes";
 
-/* 아래에 커스텀 CSS */
-/* =========================
-   문서 화면 컴팩트 스타일
-   ========================= */
+/* =================================================
+   공통 레이아웃,가독성 개선(기술 문서 스타일)
+   ================================================= */
 
-/* 본문 폭을 약간 넓혀서 가독성 개선(너무 좁으면 답답함) */
+/* 본문 폭 조정 */
 .page__content {
   max-width: 980px;
 }
 
-/* 본문 글 크기,줄 간격(기술 문서용) */
+/* 본문 텍스트 가독성 */
 .page__content p,
 .page__content li {
   font-size: 0.98rem;
   line-height: 1.75;
 }
 
-/* 제목 간격을 촘촘하게(과하게 넓은 기본 여백 축소) */
+/* 제목 간격 컴팩트 */
 .page__content h1 { margin-top: 0.2rem; }
 .page__content h2 { margin-top: 1.6rem; }
 .page__content h3 { margin-top: 1.2rem; }
 .page__content h4 { margin-top: 1.0rem; }
 
-/* 코드 블록: 조금 더 컴팩트 */
+/* 코드 블록 */
 .page__content code {
   font-size: 0.92em;
 }
@@ -35,47 +35,7 @@
   padding: 0.9rem;
 }
 
-/* 왼쪽 사이드바(문서 목차) 폭/폰트 컴팩트 */
-.sidebar {
-  font-size: 0.95rem;
-}
-.nav__title {
-  font-size: 0.95rem;
-}
-.nav__items a {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-/* 오른쪽 On this page(TOC) 박스 컴팩트 */
-.toc {
-  font-size: 0.92rem;
-}
-.toc .nav__title {
-  padding: 0.6rem 0.8rem;
-}
-.toc__menu a {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-}
-
-/* Previous / Next 버튼 크기 줄이기 */
-.pagination {
-  max-width: 600px;
-  margin: 1.8rem auto;
-}
-.pagination--pager {
-  padding: 0.5rem 1.1rem;
-  font-size: 0.88rem;
-}
-
-/* 상단 헤더 높이 살짝 낮추기(원하면) */
-.masthead {
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-}
-
-/* 표 가독성(기술 문서에 자주 필요) */
+/* 표 가독성 */
 .page__content table {
   font-size: 0.95rem;
 }
@@ -83,22 +43,132 @@
 .page__content td {
   padding: 0.55rem 0.75rem;
 }
-/* Splash - release info */
-.hero-release {
-  margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
-  font-size: 0.95rem;
+
+/* =================================================
+   상단 헤더(로고,메뉴)
+   ================================================= */
+
+.masthead {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
+/* 로고 크기 */
+.site-logo img {
+  max-height: 36px;
+}
 
-/* Hero 안 Latest release 링크 스타일 */
-.hero-release-link {
+/* =================================================
+   Hero(Splash) 영역
+   ================================================= */
+
+/* Hero 설명문 간격 */
+.page__hero--overlay .page__lead {
+  margin-bottom: 0.6rem;
+}
+
+/* Hero - Latest release 링크 */
+.page__hero--overlay .hero-release {
+  margin-top: 0.8rem;
+  margin-bottom: 1.0rem;
+}
+
+.page__hero--overlay .hero-release-link {
   color: #ffffff;
   text-decoration: underline;
   font-size: 0.95rem;
   opacity: 0.9;
 }
 
-.hero-release-link:hover {
+.page__hero--overlay .hero-release-link:hover {
   opacity: 1;
+}
+
+/* Hero 버튼 */
+.page__hero--overlay .btn {
+  margin-top: 0.2rem;
+}
+
+/* =================================================
+   Feature Row(홈 카드 3개)
+   ================================================= */
+
+.feature__item {
+  text-align: left;
+}
+
+.feature__item img {
+  border-radius: 6px;
+}
+
+.feature__item .btn {
+  font-size: 0.9rem;
+}
+
+/* =================================================
+   문서 페이지 사이드바
+   ================================================= */
+
+.sidebar {
+  font-size: 0.95rem;
+}
+
+.nav__title {
+  font-size: 0.95rem;
+}
+
+.nav__items a {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+/* =================================================
+   오른쪽 On this page(TOC)
+   ================================================= */
+
+.toc {
+  font-size: 0.92rem;
+}
+
+.toc .nav__title {
+  padding: 0.6rem 0.8rem;
+}
+
+.toc__menu a {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/* =================================================
+   Previous / Next 네비게이션 버튼
+   ================================================= */
+
+.pagination {
+  max-width: 600px;
+  margin: 1.8rem auto;
+}
+
+.pagination--pager {
+  padding: 0.35rem 1.0rem; /* 높이 축소 */
+  font-size: 0.85rem;
+  line-height: 1.2;
+  min-height: auto;
+}
+
+/* =================================================
+   반응형 미세 조정
+   ================================================= */
+
+@media (max-width: 768px) {
+  .page__content {
+    max-width: 100%;
+  }
+
+  .page__hero--overlay .hero-release-link {
+    font-size: 0.9rem;
+  }
+
+  .pagination {
+    max-width: 100%;
+  }
 }
