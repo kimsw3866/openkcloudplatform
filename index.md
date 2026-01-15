@@ -2,29 +2,9 @@
 layout: splash
 title: "openKcloud Platform"
 excerpt: "An Open AI Semiconductor-based Cloud Service Platform for Hyperscale AI Services."
-
-h---
-layout: splash
-title: "openKcloud Platform"
-excerpt: "An Open AI Semiconductor-based Cloud Service Platform for Hyperscale AI Services."
-
 header:
   overlay_image: /assets/images/hero.jpg
   overlay_filter: 0.45
----
-
-<p class="hero-release">
-  <a href="https://github.com/kimsw3866/openkcloudplatform/releases">
-    Latest release v4.27.3
-  </a>
-</p>
-
-<p>
-  <a href="https://github.com/kimsw3866/openkcloudplatform"
-     class="btn btn--primary btn--large">
-     ⬇ Install now
-  </a>
-</p>
 
 feature_row:
   - image_path: /assets/images/feature-1.jpg
@@ -44,12 +24,25 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: /assets/images/feature-3.jpg
-    alt: "오픈"
+    alt: "공개,협업 친화"
     title: "공개,협업 친화"
     excerpt: "이슈,문서,릴리스 노트를 기준으로 투명하게 협업."
     url: /contact/
     btn_label: "자세히"
     btn_class: "btn--primary"
 ---
+
+<p class="hero-release">
+  <a href="https://github.com/kimsw3866/openkcloudplatform/releases">
+    Latest release v4.27.3
+  </a>
+</p>
+
+<p>
+  <a href="https://github.com/kimsw3866/openkcloudplatform"
+     class="btn btn--primary btn--large">
+     ⬇ Install now
+  </a>
+</p>
 
 {% include feature_row %}
