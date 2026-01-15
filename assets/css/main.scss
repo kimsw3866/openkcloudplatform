@@ -217,7 +217,12 @@
 .page__hero--overlay a.btn[href*="github.com/kimsw3866/openkcloudplatform"]:not([href*="/releases"]) {
   margin-top: 0 !important;
 }
-
+.feature__item img {
+  width: 100% !important;      /* 카드 폭 꽉 채우기 */
+  max-width: none !important;  /* 전역 max-width 영향 제거 */
+  height: auto !important;
+  display: block !important;
+}
 
 
 
