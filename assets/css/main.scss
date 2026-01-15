@@ -197,3 +197,31 @@
   margin-top: 0.1rem !important;     /* 설명과 거의 붙게 */
   margin-bottom: 1.6rem !important;  /* Install과 간격 크게 */
 }
+/* ===== Hero: excerpt(An Open~) 아래 간격 줄이기 ===== */
+.page__hero--overlay .page__hero-excerpt,
+.page__hero--overlay .page__lead {
+  margin-bottom: 0.25rem !important;  /* ← 더 좁게 */
+}
+
+/* ===== Hero: Latest release 위/아래 간격 조절 ===== */
+.page__hero--overlay a.btn[href*="/releases"],
+.page__hero--overlay a.btn[href*="github.com"][href*="/releases"] {
+  margin-top: 0.05rem !important;     /* An Open~과 거의 붙게 */
+  margin-bottom: 1.6rem !important;   /* Install과 더 멀게 */
+  padding: 0 !important;              /* 링크처럼 보이게 유지 */
+  border: 0 !important;
+  background: transparent !important;
+}
+
+/* ===== Hero: Install 버튼이 위로 딸려오지 않게(혹시 gap 무시되는 경우) ===== */
+.page__hero--overlay a.btn[href*="github.com/kimsw3866/openkcloudplatform"]:not([href*="/releases"]) {
+  margin-top: 0 !important;
+}
+
+
+
+
+
+
+
+
