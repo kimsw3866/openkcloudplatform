@@ -172,3 +172,23 @@
     max-width: 100%;
   }
 }
+/* Hero 첫 액션(릴리스)을 버튼이 아니라 링크처럼 보이게 */
+.page__hero--overlay .btn.hero-release-link {
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 0 0.9rem 0 !important; /* 아래 Install 버튼과 간격 */
+  text-decoration: underline !important;
+  font-size: 1.05rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.page__hero--overlay .btn.hero-release-link:hover {
+  opacity: 1;
+}
+
+/* Install 버튼을 이미지처럼 약간 더 각지게(선택) */
+.page__hero--overlay .btn.btn--inverse.btn--large {
+  border-width: 2px;
+}
