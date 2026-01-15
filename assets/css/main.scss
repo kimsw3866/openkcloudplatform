@@ -56,26 +56,50 @@
   margin-bottom: 1.0rem;
 }
 
-/* hero actions 세로 정렬 */
-.page__hero--overlay .page__hero-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.75rem;
+/* hero actions 세로 정렬 (테마 구조 달라도 적용되게 강제) */
+.page__hero--overlay .page__hero-actions,
+.page__hero--overlay .page__hero-actions ul {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0.75rem !important;
 }
 
-/* 첫 번째 action: Latest release → 밑줄 링크 */
-.page__hero--overlay .page__hero-actions .btn:first-child {
+/* 액션이 li로 감싸져 있을 때 여백/점 제거 */
+.page__hero--overlay .page__hero-actions ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+.page__hero--overlay .page__hero-actions li {
+  margin: 0 !important;
+}
+
+/* 첫 번째 액션(릴리스)만 링크처럼 만들기 (a를 직접 선택) */
+.page__hero--overlay .page__hero-actions a.btn:first-of-type,
+.page__hero--overlay .page__hero-actions li:first-child a.btn {
   background: transparent !important;
   border: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
 
   text-decoration: underline !important;
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
   color: #ffffff !important;
-  opacity: 0.95;
+  opacity: 0.95 !important;
+}
+
+.page__hero--overlay .page__hero-actions a.btn:first-of-type:hover,
+.page__hero--overlay .page__hero-actions li:first-child a.btn:hover {
+  opacity: 1 !important;
+}
+
+/* 두 번째 액션(Install now)은 버튼 유지 + 테두리 강조 */
+.page__hero--overlay .page__hero-actions a.btn:last-of-type,
+.page__hero--overlay .page__hero-actions li:last-child a.btn {
+  border-width: 2px !important;
 }
 
 .page__hero--overlay .page__hero-actions .btn:first-child:hover {
