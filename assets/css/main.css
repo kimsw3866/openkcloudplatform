@@ -200,3 +200,57 @@
 .page__hero--overlay .page__hero-actions .btn:last-child {
   border-width: 2px;
 }
+/* ==============================
+   GitHub Star style button
+   ============================== */
+
+.page__hero--overlay .github-star-btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem;
+
+  background: #ffffff !important;
+  color: #24292f !important;
+  border: 1px solid #d0d7de !important;
+  border-radius: 6px !important;
+
+  padding: 0.45rem 0.75rem !important;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  box-shadow: 0 1px 0 rgba(31,35,40,0.04);
+}
+
+/* GitHub 아이콘 */
+.page__hero--overlay .github-star-btn::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+
+  background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: invert(0.2);
+}
+
+/* hover 효과 */
+.page__hero--overlay .github-star-btn:hover {
+  background: #f6f8fa !important;
+  text-decoration: none;
+}
+
+/* 별 개수 말풍선 */
+.page__hero--overlay .github-star-btn::after {
+  content: "2";
+  margin-left: 0.4rem;
+  padding: 0.15rem 0.45rem;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  color: #57606a;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 999px;
+}
