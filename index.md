@@ -9,9 +9,13 @@ header:
   overlay_filter: 0.45
 
   actions:
+    - label: "Latest release v4.27.3"
+      url: "https://github.com/kimsw3866/openkcloudplatform/releases"
+      class: "btn--inverse btn--small"
     - label: "⬇ Install now"
       url: "https://github.com/kimsw3866/openkcloudplatform"
-      class: "btn--inverse btn--large"  
+      class: "btn--inverse btn--large"
+
 feature_row:
   - image_path: /assets/images/feature-1.jpg
     alt: "확장형 구성"
