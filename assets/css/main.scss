@@ -82,7 +82,7 @@
   background: transparent !important;
   border: 0 !important;
   padding: 0 !important;
-  margin: 0.3rem 0 1.4rem 0 !important;
+  margin: 0.2rem 0 1.4rem 0 !important;
 
   color: #ffffff !important;
   text-decoration: underline !important;
@@ -183,4 +183,17 @@
   .page__hero--overlay a[href*="/releases"] {
     font-size: 0.95rem !important;
   }
+}
+/* ===== 설명 문장(An Open~) ↔ Latest release 간격 줄이기 ===== */
+.page__hero--overlay .page__hero-excerpt,
+.page__hero--overlay .page__hero-body,
+.page__hero--overlay .page__hero-body > p {
+  margin-bottom: 0.35rem !important; /* ← 확실히 줄임 */
+}
+
+/* ===== Latest ↔ Install 간격 늘리기 ===== */
+.page__hero--overlay a[href*="/releases"],
+.page__hero--overlay a[href*="github.com"][href*="/releases"] {
+  margin-top: 0.1rem !important;     /* 설명과 거의 붙게 */
+  margin-bottom: 1.6rem !important;  /* Install과 간격 크게 */
 }
