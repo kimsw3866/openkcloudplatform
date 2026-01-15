@@ -223,6 +223,38 @@
   height: auto !important;
   display: block !important;
 }
+/* ===== feature_row 크기 원복: 컨테이너/컬럼/이미지 모두 강제 ===== */
+
+/* feature_row 래퍼가 좁아지는 경우 방지 */
+.feature__wrapper,
+.feature__item {
+  max-width: none !important;
+}
+
+/* 3개 카드가 같은 줄에서 충분히 넓게 퍼지도록 */
+.feature__wrapper {
+  display: flex !important;
+  gap: 2rem !important;
+}
+
+.feature__item {
+  flex: 1 1 0 !important;
+}
+
+/* 이미지가 카드 폭을 꽉 채우도록 */
+.feature__item img,
+.feature__item .archive__item-teaser img {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* 이미지 주변 여백 때문에 작아 보이는 문제 방지 */
+.feature__item .archive__item-teaser {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 
 
