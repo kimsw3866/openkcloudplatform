@@ -6,14 +6,16 @@ excerpt: "An Open AI Semiconductor-based Cloud Service Platform for Hyperscale A
 header:
   overlay_image: /assets/images/hero.png
   overlay_filter: 0.45
+  
   actions:
     - label: "Latest release v4.27.3"
       url: "https://github.com/kimsw3866/openkcloudplatform/releases"
       class: "hero-release-link"
-    - label: "⬇ Install now"
-      url: "https://github.com/kimsw3866/openkcloudplatform"
-      class: "btn--inverse btn--large"
-
+caption: >
+    <a class="hero-release-link"
+       href="https://github.com/kimsw3866/openkcloudplatform/releases">
+      Latest release v4.27.3
+    </a>
 feature_row:
   - image_path: /assets/images/feature-1.jpg
     alt: "확장형 구성"
