@@ -99,3 +99,18 @@
 .hero-release a:hover {
   opacity: 1.0;
 }
+/* Hero 안 Latest release 링크 스타일 */
+.hero-release-link {
+  color: #ffffff;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.hero-release-link:hover {
+  opacity: 1;
+}
+
+/* Hero에서 excerpt(링크)와 버튼 간격 */
+.page__hero--overlay .page__lead {
+  margin-bottom: 1.0rem;
+}

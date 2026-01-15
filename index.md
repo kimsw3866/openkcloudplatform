@@ -1,11 +1,13 @@
 ---
 layout: splash
 title: "openKcloud Platform"
-excerpt: '<a class="hero-release-link" href="https://github.com/kimsw3866/openkcloudplatform/releases">Latest release v4.27.3</a>'
+excerpt: "An Open AI Semiconductor-based Cloud Service Platform for Hyperscale AI Services."
 
 header:
   overlay_image: /assets/images/hero.png
   overlay_filter: 0.45
+
+  # ✅ Install 버튼은 hero 안에
   actions:
     - label: "⬇ Install now"
       url: "https://github.com/kimsw3866/openkcloudplatform"
