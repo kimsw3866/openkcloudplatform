@@ -83,3 +83,19 @@
 .page__content td {
   padding: 0.55rem 0.75rem;
 }
+/* Splash - release info */
+.hero-release {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.hero-release a {
+  color: #ffffff;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.hero-release a:hover {
+  opacity: 1.0;
+}
