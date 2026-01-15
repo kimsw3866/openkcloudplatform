@@ -3,6 +3,7 @@
 ---
 
 @import "minimal-mistakes";
+
 /* =========================
    문서 화면 컴팩트 스타일
    ========================= */
@@ -64,10 +65,8 @@
   margin: 1.8rem auto;
 }
 .pagination--pager {
-  padding: 0.35rem 1.0rem;   /* 상하 padding 더 축소 */
-  font-size: 0.85rem;
-  line-height: 1.2;          /* 높이를 결정하는 핵심 */
-  min-height: auto;          /* 기본 높이 제한 해제 */
+  padding: 0.5rem 1.1rem;
+  font-size: 0.88rem;
 }
 
 /* 상단 헤더 높이 살짝 낮추기(원하면) */
