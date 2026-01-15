@@ -4,7 +4,7 @@ title: "openKcloud Platform"
 excerpt: "An Open AI Semiconductor-based Cloud Service Platform for Hyperscale AI Services."
 
 header:
-  overlay_image: /assets/images/hero.jpg
+  overlay_image: /assets/images/hero.png
   overlay_filter: 0.45
 
   # ✅ Install 버튼
