@@ -7,6 +7,6 @@
 }
 
 .pagination--pager {
-  padding: 0.6rem 1.2rem;  /* 버튼 내부 여백 축소 */
-  font-size: 0.9rem;       /* 글자 크기 축소 */
+  padding: 0.4rem 0.9rem;  /* 버튼 내부 여백 축소 */
+  font-size: 0.8rem;       /* 글자 크기 축소 */
 }
