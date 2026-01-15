@@ -6,7 +6,11 @@ excerpt: "An Open AI Semiconductor-based Cloud Service Platform for Hyperscale A
 header:
   overlay_image: /assets/images/hero.png
   overlay_filter: 0.45
-
+<p class="hero-release">
+  <a href="https://github.com/kimsw3866/openkcloudplatform/releases">
+    Latest release v4.27.3
+  </a>
+</p>
   # ✅ Install 버튼은 hero 안에
   actions:
     - label: "⬇ Install now"
@@ -39,17 +43,8 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-<p class="hero-release">
-  <a href="https://github.com/kimsw3866/openkcloudplatform/releases">
-    Latest release v4.27.3
-  </a>
-</p>
 
-<p>
-  <a href="https://github.com/kimsw3866/openkcloudplatform"
-     class="btn btn--primary btn--large">
-     ⬇ Install now
-  </a>
-</p>
+
+
 
 {% include feature_row %}
