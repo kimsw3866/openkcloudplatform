@@ -3,14 +3,15 @@ layout: splash
 title: "openKcloud Platform"
 excerpt: "An Open AI Semiconductor-based Cloud Service Platform for Hyperscale AI Services." 
 
+
 header:
   overlay_image: /assets/images/hero.png
   overlay_filter: 0.45
-actions:
-    - label: "Star"
-      url: "https://github.com/kimsw3866/openkcloudplatform"
-      class: "github-star-btn"
 
+  actions:
+    - label: "⬇ Install now"
+      url: "https://github.com/kimsw3866/openkcloudplatform"
+      class: "btn--inverse btn--large"  
 feature_row:
   - image_path: /assets/images/feature-1.jpg
     alt: "확장형 구성"
