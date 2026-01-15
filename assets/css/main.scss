@@ -235,3 +235,50 @@
   padding-left: 0 !important;
   margin: 0 !important;
 }
+/* ===== Hero 안 release + install 정렬을 한 덩어리로 고정 ===== */
+
+/* actions 컨테이너 자체를 세로 정렬 + 좌측 정렬 */
+.page__hero--overlay .page__hero-actions,
+.page__hero--overlay .page__hero-actions ul {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 0.75rem !important;
+  text-align: left !important;
+}
+
+/* ul/li 기본 스타일 제거 */
+.page__hero--overlay .page__hero-actions ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.page__hero--overlay .page__hero-actions li {
+  margin: 0 !important;
+}
+
+/* 릴리스 링크: 컨테이너 안에서 좌측에 붙게 */
+.page__hero--overlay .page__hero-actions a.btn[href*="/releases"],
+.page__hero--overlay .page__hero-actions a.btn[href*="github.com"][href*="/releases"] {
+  align-self: flex-start !important;
+  width: auto !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  text-decoration: underline !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  opacity: 0.95 !important;
+}
+
+/* Install 버튼: 릴리스 아래에 그대로 */
+.page__hero--overlay .page__hero-actions a.btn[href*="github.com/kimsw3866/openkcloudplatform"]:not([href*="/releases"]) {
+  align-self: flex-start !important;
+  border-width: 2px !important;
+  padding: 0.65rem 1.4rem !important;
+}
