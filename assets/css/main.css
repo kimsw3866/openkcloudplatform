@@ -1,0 +1,12 @@
+@import "minimal-mistakes";
+
+/* 문서 Previous / Next 버튼 크기 조절 */
+.pagination {
+  max-width: 600px;   /* 전체 영역 폭 축소 */
+  margin: 2rem auto;
+}
+
+.pagination--pager {
+  padding: 0.6rem 1.2rem;  /* 버튼 내부 여백 축소 */
+  font-size: 0.9rem;       /* 글자 크기 축소 */
+}
