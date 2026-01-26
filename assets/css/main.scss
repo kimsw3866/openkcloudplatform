@@ -13,7 +13,32 @@
   padding: 0.6rem 1.2rem;  /* 버튼 내부 여백 축소 */
   font-size: 0.9rem;       /* 글자 크기 축소 */
 }
+/* ===== feature_row 이미지 크기 줄이기 ===== */
+.feature__item .archive__item-teaser img {
+  width: 100% !important;
+  max-width: 260px !important;   /* ← 이미지 자체 크기 제한 */
+  height: auto !important;
+  margin: 0 auto !important;     /* 가운데 정렬 */
+  display: block !important;
+}
 
+/* ===== feature_row 카드 간 간격 늘리기 ===== */
+.feature__wrapper {
+  column-gap: 3rem !important;   /* 가로 간격 */
+  row-gap: 2.5rem !important;    /* 세로 간격(모바일 대비) */
+}
+
+/* ===== 카드 내부 여백 정리 (이미지 작아져도 균형 유지) ===== */
+.feature__item .archive__item-teaser {
+  margin-bottom: 1rem !important;
+}
+
+/* ===== 모바일에서 더 자연스럽게 ===== */
+@media (max-width: 768px) {
+  .feature__item .archive__item-teaser img {
+    max-width: 220px !important;
+  }
+}
 
 
 
