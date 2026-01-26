@@ -33,7 +33,7 @@ feature_row:
     btn_label: "Learn More"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/feature-3.jpg
+  - image_path: /assets/images/feature-3.png
     alt: "초거대 AI모델 실행환경"
     title: "초거대 AI모델 실행환경"
     excerpt: "이슈,문서,릴리스 노트를 기준으로 투명하게 협업."
