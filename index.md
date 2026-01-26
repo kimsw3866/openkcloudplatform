@@ -17,28 +17,28 @@ header:
       class: "btn--inverse btn--large"
 
 feature_row:
-  - image_path: /assets/images/feature-1.jpg
-    alt: "확장형 구성"
-    title: "구성,확장 용이"
+  - image_path: /assets/images/feature-1.png
+    alt: "AI반도체 클라우드 서비스"
+    title: "AI반도체 클라우드 서비스"
     excerpt: "가속기,엣지,클라우드 구성요소를 모듈화하여 기능을 빠르게 확장."
     url: /docs/architecture/
-    btn_label: "자세히"
+    btn_label: "Learn More"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/feature-2.jpg
-    alt: "반응형 화면"
-    title: "반응형 화면"
+  - image_path: /assets/images/feature-2.png
+    alt: "클라우드 운용비용 최적화"
+    title: "클라우드 운용비용 최적화"
     excerpt: "데스크톱,태블릿,모바일에서 문서,대시보드 탐색이 편리."
     url: /docs/intro/
-    btn_label: "자세히"
+    btn_label: "Learn More"
     btn_class: "btn--primary"
 
   - image_path: /assets/images/feature-3.jpg
-    alt: "공개,협업 친화"
-    title: "공개,협업 친화"
+    alt: "초거대 AI모델 실행환경"
+    title: "초거대 AI모델 실행환경"
     excerpt: "이슈,문서,릴리스 노트를 기준으로 투명하게 협업."
     url: /contact/
-    btn_label: "자세히"
+    btn_label: "Learn More"
     btn_class: "btn--primary"
 ---
 
