@@ -1,18 +1,16 @@
 main:
-  - title: "빠른 시작"
-    url: /docs/intro/
-  - title: "개요"
-    url: /overview/
-  - title: "문서"
-    url: /docs/
-  - title: "샘플 글"
+  - title: "Home"
+    url: /
+  - title: "Github"
+    url: https://github.com/kimsw3866/openkcloudplatform
+  - title: "Overview" #프로젝트 소개 
+    url: /docs/intro
+  - title: "Blog" #기술 관련 포스팅
+    url: /blog/ 
+  - title: "News" #컨퍼런스, 릴리즈, 홍보
     url: /news/
-  - title: "로드맵"
-    url: /roadmap/
-  - title: "성과"
-    url: /results/
-  - title: "문의"
-    url: /contact/
+  - title: "Download"
+    url: /download/
 
 docs:
   - title: "시작하기"
@@ -33,3 +31,25 @@ docs:
     children:
       - title: "실험 재현"
         url: /docs/repro/
+
+news:
+  - title: "Conference"
+    children:
+      - title: "DevDay"
+        url: /docs/install/
+      - title: "TechDay"
+        url: /docs/quickstart/
+  - title: "Release"
+    children:
+      - title: "1st Release"
+        url: /docs/architecture/
+      - title: "2nd Release"
+        url: /docs/deployment/
+  - title: "Publications"  #기사, 주요 논문, 기술 전시 등
+    children:
+      - title: "Media"
+        url: /docs/install/
+      - title: "Event"
+        url: /docs/quickstart/
+      - title: "Publication"
+        url: /docs/quickstart
