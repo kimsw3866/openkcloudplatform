@@ -9,11 +9,11 @@ header:
   overlay_filter: 0.45
 
   actions:
-    - label: "Latest release v4.27.3"
-      url: "https://github.com/kimsw3866/openkcloudplatform/releases"
+    - label: "Latest release v0.10.0"
+      url: "https://https://github.com/openkcloud/openkcloud/releases/tag/v0.1.0"
       class: "btn--inverse btn--small"
     - label: "⬇ Downloads"
-      url: "https://github.com/kimsw3866/openkcloudplatform"
+      url: "hhttps://github.com/openkcloud/openkcloud.github.io/blob/main/download_list.md"
       class: "btn--inverse btn--large"
 
 feature_row:
