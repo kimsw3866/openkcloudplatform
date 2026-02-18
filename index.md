@@ -43,3 +43,20 @@ feature_row:
 ---
 
 {% include feature_row %}
+## Recent News
+
+<div class="recent-news">
+  <ul>
+    {% for post in site.posts limit:5 %}
+      <li>
+        <span class="recent-news__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a class="recent-news__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if post.excerpt %}
+          <div class="recent-news__excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</div>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="btn btn--primary btn--small" href="{{ '/news/' | relative_url }}">더보기</a>
