@@ -10,10 +10,10 @@ header:
 
   actions:
     - label: "Latest release v0.10.0"
-      url: "https://https://github.com/openkcloud/openkcloud/releases/tag/v0.1.0"
+      url: "https://github.com/openkcloud/openkcloud/releases/tag/v0.1.0"
       class: "btn--inverse btn--small"
     - label: "⬇ Downloads"
-      url: "hhttps://github.com/openkcloud/openkcloud.github.io/blob/main/download_list.md"
+      url: "https://github.com/openkcloud/openkcloud.github.io/blob/main/downloads/2025/openKcloud%20DevDay%202025%20Presentations.zip"
       class: "btn--inverse btn--large"
 
 feature_row:
