@@ -12,7 +12,7 @@ header:
     - label: "Latest release v4.27.3"
       url: "https://github.com/kimsw3866/openkcloudplatform/releases"
       class: "btn--inverse btn--small"
-    - label: "⬇ Install now"
+    - label: "⬇ Downloads"
       url: "https://github.com/kimsw3866/openkcloudplatform"
       class: "btn--inverse btn--large"
 
