@@ -23,7 +23,7 @@ feature_row:
     excerpt: "가속기,엣지,클라우드 구성요소를 모듈화하여 기능을 빠르게 확장."
     url: /docs/architecture/
     btn_label: "Learn More"
-    btn_class: "btn--primary"
+    btn_class: "btn--primary btn-small"
 
   - image_path: /assets/images/feature-2.png
     alt: "클라우드 운용비용 최적화"
@@ -31,7 +31,7 @@ feature_row:
     excerpt: "데스크톱,태블릿,모바일에서 문서,대시보드 탐색이 편리."
     url: /docs/intro/
     btn_label: "Learn More"
-    btn_class: "btn--primary"
+    btn_class: "btn--primary btn-small"
 
   - image_path: /assets/images/feature-3.png
     alt: "초거대 AI모델 실행환경"
@@ -39,7 +39,7 @@ feature_row:
     excerpt: "이슈,문서,릴리스 노트를 기준으로 투명하게 협업."
     url: /contact/
     btn_label: "Learn More"
-    btn_class: "btn--primary"
+    btn_class: "btn--primary btn-small"
 ---
 
 {% include feature_row %}
