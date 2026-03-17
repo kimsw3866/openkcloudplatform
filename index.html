@@ -3626,9 +3626,9 @@ document.addEventListener('keydown', function(e) {
     spans[0].textContent = '⭐ Stars: ' + totalStars;
     spans[1].textContent = '🍴 Forks: ' + totalForks;
 
-    // Aggregate commits (per_page=1 + Link header trick per repo)    
+    // Aggregate commits (per_page=1 + Link header trick per repo)
     var commitPromises = repos.map(function(r) {
-      return fetch('https://api.github.com/repos/openkcloud/' + r.name + '/commits?per_page=1')
+      return fetch('https://api.github.com/repos/' + org + '/' + r.name + '/commits?per_page=1')
         .then(function(resp) {
           var link = resp.headers.get('Link') || '';
           var m = link.match(/page=(\d+)>;\s*rel="last"/);
