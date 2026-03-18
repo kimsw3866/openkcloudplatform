@@ -323,68 +323,6 @@ document.querySelectorAll('.forum-thread').forEach(function(el) {
 //커뮤니티 게시글 갯수 + 1
 var nextThreadId = 5;
 
-// ── localStorage persistence helpers ──
-function saveUserPosts() {
-  try {
-    var userPosts = [];
-    for (var id in threadData) {
-      if (threadData.hasOwnProperty(id) && threadData[id]._userCreated) {
-        userPosts.push({ id: parseInt(id), data: threadData[id] });
-      }
-    }
-    localStorage.setItem('okc_userPosts', JSON.stringify(userPosts));
-    localStorage.setItem('okc_nextThreadId', nextThreadId.toString());
-  } catch(e) { /* localStorage 사용 불가 시 무시 */ }
-}
-
-function loadUserPosts() {
-  try {
-    var saved = localStorage.getItem('okc_userPosts');
-    var savedNextId = localStorage.getItem('okc_nextThreadId');
-    if (!saved) return;
-    var userPosts = JSON.parse(saved);
-    if (savedNextId) nextThreadId = parseInt(savedNextId);
-
-    for (var i = 0; i < userPosts.length; i++) {
-      var post = userPosts[i];
-      var id = post.id;
-      var t = post.data;
-      threadData[id] = t;
-
-      // DOM에 게시글 복원
-      var badgeClass = catBadgeClassMap[t._category] || 'badge-discuss';
-      var badgeText = t._category === 'question' ? 'QUESTION' : (t._category || 'QUESTION').toUpperCase();
-      var tagsDisplay = t.tags.slice(1).join(' / ');
-      var threadHtml =
-        '<div class="forum-thread" data-cat="' + (t._category || 'question') + '" onclick="openThreadDetail(' + id + ')">' +
-          '<div class="thread-avatar ' + t.avatarClass + '">' + t.avatar + '</div>' +
-          '<div class="thread-body">' +
-            '<div class="thread-title-row">' +
-              '<span class="thread-title">' + t.title + '</span>' +
-              '<span class="thread-badge ' + badgeClass + '">' + badgeText + '</span>' +
-            '</div>' +
-            '<div class="thread-meta"><span>' + t.author + '</span><span>·</span><span>' + (t._moduleName || '') + ' / ' + tagsDisplay + '</span></div>' +
-          '</div>' +
-          '<div class="thread-stats"><span class="thread-stat-num">💬 ' + (t.commentsList ? t.commentsList.length : 0) + '</span><span class="thread-time">' + t.date + '</span></div>' +
-        '</div>';
-
-      var forumThreads = document.querySelector('.forum-threads');
-      if (forumThreads) {
-        var firstNonPinned = forumThreads.querySelector('.forum-thread:not(.pinned)');
-        if (firstNonPinned) {
-          firstNonPinned.insertAdjacentHTML('beforebegin', threadHtml);
-        } else {
-          forumThreads.insertAdjacentHTML('beforeend', threadHtml);
-        }
-      }
-    }
-    updateForumCount();
-  } catch(e) { /* 파싱 실패 시 무시 */ }
-}
-
-// 페이지 로드 시 저장된 게시글 복원
-loadUserPosts();
-
 var catBadgeMap = {
   'question': '<span class="thread-badge badge-question">QUESTION</span>',
   'discuss': '<span class="thread-badge badge-discuss">DISCUSSION</span>',
@@ -451,10 +389,7 @@ function submitNewPost() {
     author: safeNickname, date: dateStr, comments: 0,
     tags: tags,
     content: '<p>' + safeContent + '</p>',
-    commentsList: [],
-    _userCreated: true,
-    _category: category,
-    _moduleName: moduleName
+    commentsList: []
   };
 
   // build thread HTML and prepend to forum-threads list
@@ -505,7 +440,6 @@ function submitNewPost() {
   errorEl.style.display = 'none';
   closeModal('modal-newpost');
   updateForumCount();
-  saveUserPosts();
   // auto-open the new post
   setTimeout(function(){ openThreadDetail(threadId); }, 300);
 }
@@ -544,7 +478,6 @@ function deleteThread(threadId) {
 
   // remove from data
   delete threadData[threadId];
-  saveUserPosts();
 
   // update thread count
   /*var countText = document.querySelector('#comm-forum .forum-header p');
@@ -624,9 +557,6 @@ function submitComment() {
 
   // clear textarea (keep nickname)
   textarea.value = '';
-
-  // save to localStorage if user-created post
-  if (t._userCreated) saveUserPosts();
 
   // scroll to new comment
   var allComments = commentsSection.querySelectorAll('.thread-comment');
