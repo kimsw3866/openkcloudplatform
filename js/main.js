@@ -382,9 +382,6 @@ function loadUserPosts() {
   } catch(e) { /* 파싱 실패 시 무시 */ }
 }
 
-// 페이지 로드 시 저장된 게시글 복원
-loadUserPosts();
-
 var catBadgeMap = {
   'question': '<span class="thread-badge badge-question">QUESTION</span>',
   'discuss': '<span class="thread-badge badge-discuss">DISCUSSION</span>',
@@ -397,6 +394,9 @@ var catBadgeClassMap = {
   'contrib': 'badge-discuss', 'roadmap': 'badge-announce', 'announce': 'badge-announce'
 };
 var avatarColors = ['avatar-blue','avatar-teal','avatar-purple','avatar-orange','avatar-green'];
+
+// 페이지 로드 시 저장된 게시글 복원 (catBadgeClassMap, avatarColors 선언 이후)
+loadUserPosts();
 
 function submitNewPost() {
   var nicknameEl = document.getElementById('newpost-nickname');
