@@ -723,7 +723,7 @@ document.addEventListener('keydown', function(e) {
 
     // Aggregate commits (per_page=1 + Link header trick per repo)
     var commitPromises = repos.map(function(r) {
-      return fetch('https://api.github.com/repos/' + org + '/' + r.name + '/commits?per_page=1')
+      return fetch('https://api.github.com/repos/' + org + '/' + r.name + '/commits?per_page=1&since=2025-01-01T00:00:00Z')
         .then(function(resp) {
           var link = resp.headers.get('Link') || '';
           var m = link.match(/page=(\d+)>;\s*rel="last"/);
