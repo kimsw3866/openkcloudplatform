@@ -512,7 +512,27 @@
           <div class="info-box" style="background:rgba(26,111,216,0.06);border-left:3px solid var(--primary);">
             <p>📌 &nbsp;최신 릴리스는 <strong>v0.1.0</strong> (2025-11-27)입니다. 아래 릴리스 노트에서 전체 변경 사항을 확인하세요. 업그레이드 전 <strong>Breaking Changes</strong> 항목을 반드시 검토하시기 바랍니다.</p>
           </div>
-         
+          <!-- ── Upcoming: v0.2.0 ── -->
+          <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px;">
+              <h2 class="doc-h2" style="margin:0;">v0.1.5</h2>
+              <span style="font-family:'Space Mono',monospace;font-size:10px;background:var(--surface2);color:var(--text-muted);padding:3px 10px;border-radius:100px;">UPCOMING · 2026 Q2</span>
+            </div>
+            <p style="font-size:13px;color:var(--text-muted);font-family:'Space Mono',monospace;margin-bottom:20px;">예정 릴리스 — 2026-07 (예정)</p>
+            <p class="doc-p">v0.1.5에서는 각 모듈별 기능 추가가 진행될 예정이며 다수 NPU 연동 제공이 주요 변경으로 포함될 예정입니다</p>
+            <!---
+            <ul class="doc-ul">
+              <li><strong>kcloud-svc</strong>: NPU/PIM 자원 결합(Resource Fusion) 정식 지원</li>
+              <li><strong>kcloud-opt</strong>: kcloud-cost-scheduler v2 — NPU/PIM 비용 모델 추가</li>
+              <li><strong>kcloud-llm</strong>: LLM 성능 측정 파이프라인 정식 릴리스 및 MLPerf 결과 공개</li>
+              <li><strong>kcloud-mnt</strong>: 멀티클러스터 연합 관리 UI 및 API 지원</li>
+              <li>OpenStack 기반 클라우드 환경 연동 지원 (실험적)</li>
+            </ul>
+            <a href="#" onclick="switchComm(document.querySelector('.comm-tab:nth-child(1)'),'comm-forum');showPage('community');return false;" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--primary);text-decoration:none;margin-top:8px;">
+              📋 &nbsp;2025 Q2 로드맵 전체 보기 →
+            </a>
+          -->
+          </div>
           <!-- ── v0.1.0 ── -->
           <div style="margin-top:40px;">
             <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px;">
@@ -651,28 +671,7 @@
             <p style="font-size:12px;color:var(--text-muted);margin-top:10px;">전체 기여자 목록은 <a href="#" style="color:var(--primary);text-decoration:none;" onclick="showPage('community');return false;">커뮤니티 → 기여자</a> 페이지에서 확인하실 수 있습니다.</p>
           -->
           </div>
-
-          <!-- ── Upcoming: v0.2.0 ── -->
-          <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);">
-            <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px;">
-              <h2 class="doc-h2" style="margin:0;">v0.1.5</h2>
-              <span style="font-family:'Space Mono',monospace;font-size:10px;background:var(--surface2);color:var(--text-muted);padding:3px 10px;border-radius:100px;">UPCOMING · 2026 Q2</span>
-            </div>
-            <p style="font-size:13px;color:var(--text-muted);font-family:'Space Mono',monospace;margin-bottom:20px;">예정 릴리스 — 2026-07 (예정)</p>
-            <p class="doc-p">v0.1.5에서는 각 모듈별 기능 추가가 진행될 예정이며 다수 NPU 연동 제공이 주요 변경으로 포함될 예정입니다</p>
-            <!---
-            <ul class="doc-ul">
-              <li><strong>kcloud-svc</strong>: NPU/PIM 자원 결합(Resource Fusion) 정식 지원</li>
-              <li><strong>kcloud-opt</strong>: kcloud-cost-scheduler v2 — NPU/PIM 비용 모델 추가</li>
-              <li><strong>kcloud-llm</strong>: LLM 성능 측정 파이프라인 정식 릴리스 및 MLPerf 결과 공개</li>
-              <li><strong>kcloud-mnt</strong>: 멀티클러스터 연합 관리 UI 및 API 지원</li>
-              <li>OpenStack 기반 클라우드 환경 연동 지원 (실험적)</li>
-            </ul>
-            <a href="#" onclick="switchComm(document.querySelector('.comm-tab:nth-child(1)'),'comm-forum');showPage('community');return false;" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--primary);text-decoration:none;margin-top:8px;">
-              📋 &nbsp;2025 Q2 로드맵 전체 보기 →
-            </a>
-          -->
-          </div>
+        
 
           <div class="doc-nav">
             <a href="#" class="doc-nav-btn prev" onclick="setDoc(document.querySelector('.nav-item:nth-child(1)'),'doc-intro');return false;"><span class="doc-nav-label">← 이전</span><span class="doc-nav-title">소개</span></a>
@@ -1240,7 +1239,9 @@
           <div class="dl-info-item"><strong>Kubernetes 1.28+</strong>요구사항</div>
         </div>
         <div class="dl-btn"><a href="https://github.com/openkcloud/openkcloud/archive/refs/tags/v0.1.0.tar.gz" class="btn-primary" target="_blank" rel="noopener">↓ &nbsp;Source (.tar.gz)</a>   
-        </div>         
+        </div>
+        <div class="dl-btn"><a href="https://github.com/openkcloud/openkcloud/archive/refs/tags/v0.1.0.zip" class="btn-primary" target="_blank" rel="noopener">↓ &nbsp;Source (.zip)</a>   
+        </div>           
       </div>      
     </div>
     <div class="dl-changelog">
