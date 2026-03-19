@@ -712,8 +712,7 @@ document.addEventListener('keydown', function(e) {
 
   // ── GitHub Personal Access Token (선택사항) ──
   // 인증 없이: IP당 시간당 60회 제한 → 캐싱으로 충분히 운영 가능
-  // 토큰 사용 시: 시간당 5,000회 제한
-  // 주의: public 리포에 토큰을 커밋하면 GitHub가 자동 폐기합니다
+  // 토큰 사용 시: 시간당 5,000회 제한, 주의사항:public 리포에 토큰 커밋시 GitHub 자동 폐기
   var GH_TOKEN = '';
 
   var ghHeaders = { 'Accept': 'application/vnd.github.v3+json' };
